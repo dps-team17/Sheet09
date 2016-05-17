@@ -1,0 +1,48 @@
+
+package team17.sheet09.client.ws;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java-Klasse f�r Lucas complex type.
+ * <p>
+ * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>
+ * <pre>
+ * &lt;complexType name="Lucas">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "Lucas", propOrder = {
+        "arg0"
+})
+public class Lucas {
+
+    protected int arg0;
+
+    /**
+     * Ruft den Wert der arg0-Eigenschaft ab.
+     */
+    public int getArg0() {
+        return arg0;
+    }
+
+    /**
+     * Legt den Wert der arg0-Eigenschaft fest.
+     */
+    public void setArg0(int value) {
+        this.arg0 = value;
+    }
+
+}

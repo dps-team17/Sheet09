@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Json support
+    compile group: 'javax.json', name: 'javax.json-api', version: '1.0'
+    compile group: 'org.glassfish', name: 'javax.json', version: '1.0.4'
+
+    // Web services support
+    compile group: 'javax.xml.ws', name: 'jaxws-api', version: '2.2.11'
+    compile group: 'com.sun.xml.ws', name: 'jaxws-rt', version: '2.2.10'
+}
